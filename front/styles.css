@@ -61,7 +61,6 @@ body {
     height: 65%;
     width: 160px;
     position: fixed;
-    z-index: 1;
     top: 180px;
     background-color:rgba(0, 0, 0, 0.933) ;
     overflow-x: hidden;
@@ -83,4 +82,7 @@ body {
 @media screen and(max-height: 450px) {
     .navigation-aside{padding-top: 15px;}
     .navigation-aside a{font-size:18px;}
+}
+.telephone-footer a:hover {
+    color: #f1f1f1;
 }
