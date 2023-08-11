@@ -1,0 +1,27 @@
+header {  
+    background-color: rgba(0, 0, 0, 0.882);  
+    position: fixed;  
+    top: 0;  
+    z-index: 100;  
+    width: 100%;  
+    }
+p {
+    color:rgba(0, 0, 0, 0.933)
+}
+
+.logo {
+    margin:25px;
+
+}
+
+body {
+    background-image: url('https://img2.akspic.ru/crops/9/7/2/1/1/111279/111279-nebo-monoxromnyj_rejim-seryj_cvet-granzh-risovanie-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Josefin Sans" sans-serif;
+}
+
+.h-text {
+    color: white;
+    margin: 10px;
+}
