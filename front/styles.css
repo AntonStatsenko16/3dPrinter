@@ -1,16 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}    
 header {  
     background-color: rgba(0, 0, 0, 0.882);  
     position: fixed;  
     top: 0;  
     z-index: 100;  
-    width: 100%;  
+    width: 100%; 
+    border:4px solid rgb(77, 75, 75); 
     }
-p {
-    color:rgba(0, 0, 0, 0.933)
+.main-text {
+    color:rgba(0, 0, 0, 0.933);
 }
 
 .logo {
     margin:25px;
+    
 
 }
 
@@ -19,9 +28,59 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Josefin Sans" sans-serif;
+    height: 100%;
 }
 
 .h-text {
     color: white;
     margin: 10px;
+}
+.wrapper-footer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+    border:4px solid rgb(77, 75, 75);
+}
+.content-footer {
+	flex: 1 0 auto;
+    color: #818181;
+    background-color:rgba(0, 0, 0, 0.933);
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.text-main {
+    margin-left: 180px;
+    margin-right: 20px;
+    margin-top: 180px;
+    margin-bottom: 60px;
+}
+
+.navigation-aside {
+    height: 65%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 180px;
+    background-color:rgba(0, 0, 0, 0.933) ;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.navigation-aside a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.navigation-aside a:hover {
+    color:white;
+}
+
+@media screen and(max-height: 450px) {
+    .navigation-aside{padding-top: 15px;}
+    .navigation-aside a{font-size:18px;}
 }
