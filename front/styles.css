@@ -7,10 +7,11 @@ html {
 }    
 header {  
     background-color: rgba(0, 0, 0, 0.882);  
-    position: fixed;  /**/
+    position: sticky;  /*fixed? на всю страницу*/
     top: 0;  /**/
     z-index: 100;  /**/
     width: 100%; /**/
+    height: 150px;
     border:4px solid rgb(77, 75, 75); 
     }
 
@@ -31,7 +32,7 @@ header {
 
 .logo {
     position: relative;
-    margin:25px;
+    margin:15px;
     
 }
 
@@ -46,6 +47,7 @@ body {
 .img-top {
     margin-top:20px;
     margin-bottom: 20px;
+    margin-right: 90px;
 }
 
 .header-text {
@@ -68,9 +70,10 @@ body {
 }
 
 .text-main {
+    text-align: center;
     margin-left: 180px;
     margin-right: 20px;
-    margin-top: 180px;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
 
