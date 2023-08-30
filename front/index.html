@@ -11,45 +11,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"><!--Стыковка с CSS-->
+    <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
  <!--Шапка-->
  <header>
-    <div class="container">
-        <div class="top-line">
-            <div class="logo">
+    <div class="menu">
+            <div class="menu__logo">
                 <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/7309/7309625.png" width="60" alt="3D-logo"></a>
             </div>
-        </div>
-    </div>
-    <div class="header">
-        <div class="container">
-            <div class="header-text">
-                <h1 class="title">Types of 3D printers</h1>
+            <div class="menu__name">
+                <h1>Types of 3D printers</h1>
             </div>
-        </div>
+            <div class="menu__item">
+                <div class="menu__item_navigation">
+                    <button>Types of printers</button>
+                    <button>Menu</button>
+                    <button>Contacts</button>
+                    <button>About us</button>
+                </div>
+            </div>
+            <div class="menu__auth">
+                <ul>
+                <li><label style="color: white;">Password<input type="password"></label></li>
+                <li><label style="color: white;">Login<input type="login"></label></li>
+                <li><button>Sign up</button></li>
+                </ul>
+            </div>
     </div>
+    
 </header>
 <main><!--Осн.содержимое-->
-    <div class="text-main">
+    <div class="content">
         <h1>3D printer is the technology of the future</h1>
-        <img class="img-top"src="https://kotsovolos.blob.core.windows.net/site/include/guides/3d-printers/images/1-ver-1.jpg"style="position: relative; left: 60px" height="360px" width="1200px" alt="photo 3d-printer">
-        <p class="start-text">
+        <img class="content_main-img"src="https://kotsovolos.blob.core.windows.net/site/include/guides/3d-printers/images/1-ver-1.jpg"style="position: relative; left: 60px" height="360px" width="1200px" alt="photo 3d-printer">
+        <p>
             &nbsp;&nbsp;&nbsp;&nbsp;In everyday life, 3D came to us at the beginning of the new millennium.
              We naturally associate this definition with cinema or animation. 
              But this technology covers much more spectrums of our life. 
              So, what is a 3D printer, and what is printing on such a device? 
              A 3D printer is a device that creates an image in three dimensions.
         </p>
-        <div class="first-block"><!--Блок с ссылками на виды принтеров-->
-            <button class="first-3d"><a href="./first_3d.html"><img src="https://i.pinimg.com/564x/fd/6f/66/fd6f6650962a19356f6d058c41b12ead.jpg" width="250px" height="500px" alt="first-3d" title="Click on me"></a></button>
-            <button class="second-3d"><a href="./second_3d.html"><img src="https://i.pinimg.com/736x/65/11/db/6511db89f44669e8b31d7f8177b1dcc9.jpg" width="250px" height="500px" alt="second-3d" title="Click on me"></a></button>
-            <button class="third-3d"><a href="./third_3d.html"><img src="https://i.pinimg.com/564x/de/4d/20/de4d20e748915cdd63a297d9142a12e9.jpg" width="250px" height="500px" alt="third-3d" title="Click on me"></a></button>
-            <button class="four-3d"><a href="./four_3d.html"><img src="http://img1.liveinternet.ru/images/foto/c/1/253/1158253/f_21355614.jpg" width="250px" height="500px" alt="four-3d" title="Click on me"></a></button>
-            <button class="fifth-3d"><a href="./fifth_3d.html"><img src="https://i.pinimg.com/564x/fd/6f/66/fd6f6650962a19356f6d058c41b12ead.jpg" width="250px" height="500px" alt="fifth-3d" title="Click on me"></a></button>
+        <div class="content__printers"><!--Блок с ссылками на виды принтеров-->
+            <div class="content__printers_button-one"><button><a href="./first_3d.html"><img src="../img/sla.jpg" width="250px" height="500px" alt="first-3d" title="Click on me"></a></button></div>
+            <div class="content__printers_button-two"><button><a href="./second_3d.html"><img src="https://i.pinimg.com/736x/65/11/db/6511db89f44669e8b31d7f8177b1dcc9.jpg" width="250px" height="500px" alt="second-3d" title="Click on me"></a></button></div>
+            <div class="content__printers_button-trhee"><button><a href="./third_3d.html"><img src="https://i.pinimg.com/564x/de/4d/20/de4d20e748915cdd63a297d9142a12e9.jpg" width="250px" height="500px" alt="third-3d" title="Click on me"></a></button></div>
+            <div class="content__printers_button-four"><button><a href="./four_3d.html"><img src="http://img1.liveinternet.ru/images/foto/c/1/253/1158253/f_21355614.jpg" width="250px" height="500px" alt="four-3d" title="Click on me"></a></button></div>
+            <div class="content__printers_button-five"><button><a href="./fifth_3d.html"><img src="https://i.pinimg.com/564x/fd/6f/66/fd6f6650962a19356f6d058c41b12ead.jpg" width="250px" height="500px" alt="fifth-3d" title="Click on me"></a></button></div>
         </div>
         <h2>Core technologies</h2>
-        <p class="start-text">
+        <p>
             &nbsp;&nbsp;&nbsp;&nbsp;Printing on 3D printers can be done in different ways, 
         depending on the material used. <abbr title="StereoLithography Apparatus"><a href="#">SLA</a></abbr> technology. This technology allows the fastest construction of objects. 
         The technology uses a photopolymer, on which a laser beam is directed, after which the material hardens. 
@@ -60,8 +71,7 @@
         Printers of this type use digital light processing. This technology uses photopolymer resins and a <abbr title="Digital Light Processing"><a href="#">DLP</a></abbr> projector to create three-dimensional figures. <abbr title="Electron Beam Melting"><a href="#">EBM</a></abbr> technology. 
         This technology uses electron beam melting to create three-dimensional objects.
         </p>
-        <hr>
-        <p class="start-text">
+        <p>
         &nbsp;&nbsp;&nbsp;&nbsp;For the layer-by-layer deposition of high-precision parts, a special material was developed - metal clay. 
         This material is made from a mixture of organic glue, metal shavings and water. <abbr title="Fusing Deposition Modeling"><a href="#">FDM</a></abbr> technology. 
         Gives the opportunity to obtain final models from structural and high-performance thermoplastics. 
@@ -71,7 +81,8 @@
         </p>
     </div>
     <aside>
-        <div class="navigation-aside"><!--Навигация сайта через сайдбар-->
+        <div class="sidebar"><!--Навигация сайта через сайдбар-->
+            <label style="color: #818181;" for="Search">Search<input style="background-color: white; width: 100px; color: black;" type="search"></label>
             <a href="./about.html">About</a>
             <a href="./types_3d.html">Types 3d printers</a>
             <a href="./contacts.html">Contact</a>
@@ -81,15 +92,25 @@
 </main>
 
 <footer>
-    <div class="wrapper-footer"><!--Футер-->
-        <div class="content-footer">
-            <address class="address-footer">Ekaterinburg, Mamina-Sybiryaka street, 64</address>
-            <a class="telephone-footer" href="+79126849146">+79126849146</a>
-        </div>
-        <div class="footer"></div>
+    <div class="bottom">
+    <ul class="social">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="info">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Types of 3d printers</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <p>©2023 3D Project | All Rights Reserved</p>    
     </div>
-    
 </footer>
+<!--Готовые иконки из библиотеки ionicons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 <script src="js/main.js"></script><!--Стыковка JS-->    
