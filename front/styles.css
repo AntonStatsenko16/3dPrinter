@@ -1,40 +1,24 @@
 html {
 	height: 100%; /**/
-}    
+} 
+
+body {
+    background-image: url('https://img2.akspic.ru/crops/9/7/2/1/1/111279/111279-nebo-monoxromnyj_rejim-seryj_cvet-granzh-risovanie-1920x1080.jpg'); /**/
+    background-repeat: cover; 
+    background-size: 100%;
+    font-family: "Josefin Sans" sans-serif;
+}
+
+/* HEADER */
+
 header {  
     background-color: rgba(0, 0, 0, 0.882);  
     position: sticky;  /*fixed? на всю страницу*/
     top: 0;  /**/
     z-index: 100;  /**/
     width: 100%; /**/
-    height: 120px;
+    height: 100px;
     border:4px solid rgb(77, 75, 75); 
-    }
-
-main h1 {
-    font-size: 2em;
-    font-weight: 700;
-}
-
-main h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-main p {
-    font-size: 25px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-
-main p a {
-    text-decoration: none;/**/
-}
-
-main p a:hover {
-    color: rgba(153, 193, 21, 0.853);
-    transition: 0.4s;   /**/
 }
 
 .menu {
@@ -104,77 +88,40 @@ button:hover {
 	color: #ffffff;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
+/* CONTENT */
 
-body {
-    background-image: url('https://img2.akspic.ru/crops/9/7/2/1/1/111279/111279-nebo-monoxromnyj_rejim-seryj_cvet-granzh-risovanie-1920x1080.jpg'); /**/
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    font-family: "Josefin Sans" sans-serif;
-    height: 100%;
+main h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+main h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+main p {
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+main p a {
+    color: black;
+    font-weight: 600;/**/
+}
+
+main p a:hover {
+    color: rgba(153, 193, 21, 0.853);
+    transition: 0.4s;   /**/
 }
 
 .content_main-img {
     margin-top:20px;
     margin-bottom: 20px;
     margin-right: 90px;
-}
-
-footer{
-    position: relative;/*относительное позиционирование*/
-    width: 100%;/*на всю ширину*/
-    padding: 30px 180px;/*поля для контента*/
-    background: rgba(0, 0, 0, 0.933);/*цвет футера*/
-    display: flex;
-    justify-content: center;/*в центре по горизонтали*/
-    align-items: center;/*в центре по вертикали*/
-    flex-direction: column;
-    margin-top: 100px;/*отступ сверху*/
-}
-footer .wave{
-    position: absolute;/*абсолютное позиционирование*/
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(wave.png);/*картинка волны*/
-    background-size: 1000px 100px;/*ширина и высота волны*/
-}
-.social,
-.info{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;/*разрешен перенос на новую строку*/
-}
-.social li,
-.info li{
-    list-style: none;/*удалить черные маркеры*/
-}
-.social li a {
-    font-size: 2em;/*размер иконок*/
-    color: #fff;/*цвет иконок*/
-    margin: 0 10px;
-    display: inline-block;/*отображать как строчно-блочный элемент*/
-    transition: 0.5s;/*плавный переход*/
-}
-.info li a {
-    font-size: 1.2em;/*размер ссылок меню*/
-    color: #fff;/*цвет ссылок меню*/
-    opacity: 0.75;/*значение прозрачности*/
-    margin: 0 15px;
-    text-decoration: none;/*ссылка без подчеркивания*/
-    display: inline-block;
-}
-.info li a:hover {
-    opacity: 1;
-}
-footer p {
-    color: #fff;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1.1em;
 }
 
 .content {
@@ -185,37 +132,7 @@ footer p {
     margin-bottom: 60px;
 }
 
-.sidebar {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    top: 180px;
-    background-color:rgba(0, 0, 0, 0.933) ;
-    overflow-x: hidden; /**/
-    padding-top: 15px; /**/
-    z-index: 1;
-}
-
-.sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
-
-.sidebar a:hover {
-    color:white;
-}
-
-@media screen and(max-height: 450px) { /**/
-    .sidebar{padding-top: 15px;}
-    .sidebar a{font-size:18px;}
-}
-
 .content__printers {
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 140px);
@@ -260,5 +177,93 @@ footer p {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     transition: all 700ms;
-
 }
+
+/* FOOTER */
+
+footer {
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 30px 180px;/*поля для контента*/
+    background: rgba(0, 0, 0, 0.933);/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+
+.social,
+.info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+
+.social li,
+.info li {
+    list-style: none;/*удалить черные маркеры*/
+}
+
+.social li a {
+    font-size: 3em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+}
+
+.info li a {
+    font-size: 1.5em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+
+.info li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    top: 180px;
+    background-color:rgba(0, 0, 0, 0.933) ;
+    overflow-x: hidden; /**/
+    padding-top: 15px; /**/
+    z-index: 1;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidebar a:hover {
+    color:white;
+}
+
+/* ADAPTIVE */
+
+@media screen and(max-height: 450px) { /**/
+    .sidebar{padding-top: 15px;}
+    .sidebar a{font-size:18px;}
+}
+
