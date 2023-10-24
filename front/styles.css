@@ -298,13 +298,13 @@ footer p {
 @media (max-width:1400px) {
 
 .menu__name {
-    font-size: 10vh;
-    text-align: center;
+    font-size: 230%;
+    /*text-align: center;*/
     margin-top: 30px;
 }
 
 .menu__item {
-    font-size: 4vh;
+    font-size: 10%;
     height: 20px;
 }
 .grid-container {
@@ -317,7 +317,7 @@ footer p {
 }
 header {
     border: 1px solid rgb(77, 75, 75);
-    height: 34vh;
+    height: 34%;
 }
 
 }
@@ -332,8 +332,8 @@ header {
     height: 40px;
     }
 .menu__name {
-    font-size: 15vh;
-    margin-top: 5px;
+    font-size: 150%;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
@@ -344,7 +344,7 @@ header {
 }
 
 .menu__item {
-    font-size: 2vh;
+    font-size: 0.2rem;
     height: 20px;
 
 }
@@ -354,43 +354,69 @@ header {
 }
 
 .menu__auth {
-    font-size: 2vh;
+    font-size: 0.1rem;
     height: 20vh; 
 }
 header {
     border: 2px solid rgb(77, 75, 75);
-    height: 28vh;
+    height: 28%;
 }
 }
 
 @media (max-width:770px) {
 
 header {
-    height: 30vh;
+    height: 30%;
+    border: none;
 }
 
 .menu__item_navigation button{
-    height: 15vh;
+    padding: 7%;
     margin-top: -15px;
+    border: solid 1vh #1c1c1c;
+    font-size: 1.5em;
 
 }
 .menu__name {
-    font-size: 10vh;
+    font-size: 150%;
+    margin-top: 5px;
+}
+
+.menu__auth {
+    margin-top: 1px;
 }
 
 .menu__auth button{
-    font-size: 2vh;
+    font-size: 0.2rem;
     height: 10vh;
+    width: 20vh;
+   
+} 
+
+.menu__auth label {
+    font-size: 140%;
 }
+
+.menu__auth input {
+    border: none;
+}
+
 .menu__logo {
     margin: 5px;
-    width: 15vh;
+    width: 5%;
     height: 10%;
 }
 
-
-
 }
+
+/* @media (max-width:350px) {
+
+.menu__name {
+    font-size: 150%;
+    margin-top: 5px;
+}
+
+} */
 
 /* .grid-container {
     height: 100vh;
