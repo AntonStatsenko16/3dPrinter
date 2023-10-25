@@ -283,17 +283,6 @@ footer p {
 }
 
 /* ADAPTIVE */
-/* @media (max-width:1550px) {
-.menu__name {
-    font-size: 12vh;
-}
-.menu__item{
-    height: 10%;
-    margin-top: 2vh;
-
-}
-
-} */
 
 @media (max-width:1400px) {
 
@@ -405,6 +394,26 @@ header {
     margin: 5px;
     width: 5%;
     height: 10%;
+}
+
+.grid-container {
+    justify-content: end;
+}
+
+.content_main-img {
+    margin-left: -50%;
+    width: 100%;
+    height: 70%;
+}
+
+.grid-container h1 {
+    font-size: 10%;
+    text-align: left;
+    
+}
+
+.grid-container p {
+    font-size: 10%;
 }
 
 }
